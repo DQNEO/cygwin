@@ -16,3 +16,6 @@ apt-cyg -m ftp://ftp.iij.ad.jp/pub/cygwin/ update
 apt-cyg install curl
 apt-cyg install make gcc-core autoconf gcc-g++ zlib-devel libiconv libiconv-devel
 apt-cyg install git
+
+# install development tools
+apt-cyg install emacs zsh screen 
