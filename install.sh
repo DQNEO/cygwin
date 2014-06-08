@@ -21,6 +21,7 @@ apt-cyg install git
 apt-cyg install emacs zsh screen 
 
 # clone and make install git latest version
+install_git () {
 git clone git://github.com/git/git.git ~/src/git
 cd ~/src/git
 make configure
@@ -30,4 +31,6 @@ make install
 
 # use new git
 alias git=/usr/local/bin/git
+}
 
+install_git
