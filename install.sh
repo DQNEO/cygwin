@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # install apt-cyg
-curl https://raw.githubusercontent.com/kou1okada/apt-cyg/master/apt-cyg > /usr/local/bin/apt-cyg
+
+wget https://raw.githubusercontent.com/kou1okada/apt-cyg/master/apt-cyg -O /usr/local/bin/apt-cyg
 chmod +x /usr/local/bin/apt-cyg
 
 # set mirror
