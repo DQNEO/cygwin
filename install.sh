@@ -7,6 +7,9 @@ chmod +x /usr/local/bin/apt-cyg
 
 # set mirror
 apt-cyg -m ftp://ftp.iij.ad.jp/pub/cygwin/ update
-# 
-# apt-cyg install git
+ 
 
+# install packages
+apt-cyg install curl
+apt-cyg install make gcc-core autoconf gcc-g++ zlib-devel libiconv libiconv-devel
+apt-cyg install git
