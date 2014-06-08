@@ -19,7 +19,7 @@ apt-cyg install git
 
 # install development tools
 apt-cyg install emacs zsh screen 
-apt-cyg install more nano tree nkf colordiff
+apt-cyg install nano tree nkf colordiff
 
 # clone and make install git latest version
 install_git () {
