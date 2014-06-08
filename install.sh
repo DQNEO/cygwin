@@ -35,3 +35,29 @@ alias git=/usr/local/bin/git
 }
 
 [[ -e /usr/local/bin/git ]] || install_git
+
+install_perl () {
+# plenvを取得
+git clone git://github.com/tokuhirom/plenv.git ~/.plenv/
+
+# Perl-Buildを取得
+git clone git://github.com/tokuhirom/Perl-Build.git ~/.plenv/plugins/perl-build/
+
+# パス設定など
+echo 'export PATH=~/.plenv/bin:~/.plenv/shims/:$PATH' >> ~/.bashrc
+echo 'eval "$(plenv init -)"' >> ~/.bashrc
+
+# シェルにログインしなおす
+$SHELL -l
+
+perl_version=5.20.0
+# perl をインストール
+plenv install $perl_version
+plenv global $perl_version
+
+# cpanmをインストール
+plenv install-cpanm
+plenv rehash
+}
+
+install_perl
