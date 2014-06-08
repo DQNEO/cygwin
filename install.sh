@@ -19,3 +19,11 @@ apt-cyg install git
 
 # install development tools
 apt-cyg install emacs zsh screen 
+
+# clone and make install git latest version
+git clone git://github.com/git/git.git ~/src/git
+cd ~/src/git
+make configure
+./configure --prefix=/usr/local
+make all
+make install
