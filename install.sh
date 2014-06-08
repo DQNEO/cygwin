@@ -27,3 +27,7 @@ make configure
 ./configure --prefix=/usr/local
 make all
 make install
+
+# use new git
+alias git=/usr/local/bin/git
+
