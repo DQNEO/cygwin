@@ -33,4 +33,4 @@ make install
 alias git=/usr/local/bin/git
 }
 
-install_git
+[[ -e /usr/local/bin/git ]] || install_git
