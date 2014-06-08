@@ -1,5 +1,8 @@
 #!/bin/bash
 
+set -e
+set -o
+
 # install apt-cyg
 
 wget https://raw.githubusercontent.com/kou1okada/apt-cyg/master/apt-cyg -O /usr/local/bin/apt-cyg
